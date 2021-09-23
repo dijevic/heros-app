@@ -1,13 +1,129 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.my-card {
+  min-width: 260px;
+  max-width: 300px;
+  max-height: 70vh;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  margin: 10px auto;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 2px 2px 5px #000;
+  animation-name: fadeIn;
+  animation-iteration-count: initial;
+  animation-duration: 1s;
+}
+
+.my-card img {
+  transition: all 0.15s linear;
+  position: relative;
+  top: -15%;
+  left: -25%;
+  filter: brightness(70%);
+}
+
+.my-card .profile-name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+  padding: 15px 20px;
+  transition: all 0.15s linear;
+}
+
+.my-card .profile-position {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.596);
+  left: 30px;
+  top: 60px;
+  transition: all 0.15s linear;
+}
+
+.my-card .profile-overview {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(255, 255, 0, 0)
+  );
+  color: #fff;
+  padding: 50px 0px 40px 0px;
+  transition: all 0.15s linear;
+}
+
+.my-card .profile-overview h3 {
+  font-weight: bold;
+  font-size: large;
+  padding-left: 25px;
+}
+
+.my-card .profile-overview p {
+  color: rgba(255, 255, 255, 0.7);
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.my-card:hover .profile-name {
+  padding-left: 25px;
+  transition: 1.2s ease all;
+}
+
+.my-card:hover .profile-position {
+  left: 40px;
+  transition: 1.2s ease all;
+}
+
+.my-card:hover .profile-overview {
+  padding-bottom: 25px;
+  transition: 1.2s ease all;
+}
+
+.my-card img:hover {
+  transform: scale(1.01);
+  transition: 1.2s ease all;
+}
+.col-4 img {
+  animation-name: fadeInLeft;
+  animation-iteration-count: initial;
+  animation-duration: 1s;
+}
+.col-8 {
+  animation-name: fadeInUp;
+  animation-iteration-count: initial;
+  animation-duration: 1.3s;
+}
+.outLeft {
+  animation-name: fadeOutLeft;
+  animation-iteration-count: initial;
+  animation-duration: 1s;
+}
+.outDown {
+  animation-name: fadeOutDown;
+  animation-iteration-count: initial;
+  animation-duration: 1.3s;
+}
+.x {
+  box-shadow: none;
+  animation-name: flipOutX;
+  animation-iteration-count: initial;
+  animation-duration: 1.3s;
 }

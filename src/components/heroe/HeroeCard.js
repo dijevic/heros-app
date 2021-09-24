@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { /* Link */ useHistory } from 'react-router-dom'
 
 export const HeroeCard = ({
     id,
@@ -12,12 +12,14 @@ export const HeroeCard = ({
     const handleClick = ({ target }) => {
 
         // target.parentElement.firstElementChild.classList.add('outLeft')
-        target.parentElement.classList.add('x')
+        target.parentElement.classList.add('outLeft')
 
         setTimeout(() => {
             window.scrollTo(0, 0)
             history.push(`./hero/${id}`)
-        }, 800)
+        }, 500)
+
+        // elimine los link y agregue un div haciendo pruebas ***********NOTA************
 
     }
 

@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react'
 import { useLocation } from 'react-router';
 import queryString from 'query-string'
-import { heroes } from '../../data/heroes'
 import { UseForm } from '../../hooks/useForm';
 import { HeroeCard } from '../heroe/HeroeCard';
 import { getHeroeByName } from '../../selectors/GetHeroesByName';
@@ -12,7 +11,7 @@ export const SearchScreen = ({ history }) => {
     const { q = '' } = queryString.parse(location.search)
 
 
-    const [formValues, handleInputChange, reset] = UseForm({
+    const [formValues, handleInputChange] = UseForm({
         searchText: q
     })
 
@@ -60,7 +59,7 @@ export const SearchScreen = ({ history }) => {
                         </div>
                     }
                     {
-                        (q !== '' && heroesFiltrados.length == 0) &&
+                        (q !== '' && heroesFiltrados.length === 0) &&
                         <div className="alert alert-info w-100">
                             no existe un heroe con el nombre {q}
                         </div>

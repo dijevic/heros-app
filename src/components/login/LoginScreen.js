@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { authContext } from '../../auth/AuthContext'
+import { types } from '../../tipos/types'
 
 export const LoginScreen = ({ history }) => {
-    // el history vienbe en los props de los componentes
+    const { dispatch } = useContext(authContext)
     const handleClick = () => {
-        // history.push('/')
-        history.replace('/')
+        const path = localStorage.getItem('lastPath') || '/'
+        const user = {
+            nombre: 'diego jesus',
+            apellido: 'vielma carrero',
+            id: 123456,
+        }
+        dispatch({
+            type: types.login,
+            payload: user
+        })
+        history.replace(path)
+
+
+
     }
     return (
         <div className="container mt-5">

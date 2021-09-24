@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 code {
@@ -26,6 +27,7 @@ code {
   animation-name: fadeIn;
   animation-iteration-count: initial;
   animation-duration: 1s;
+  z-index: 20;
 }
 
 .my-card img {

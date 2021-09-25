@@ -42,6 +42,7 @@ export const SearchScreen = ({ history }) => {
                             name="searchText"
                             value={searchText}
                             onChange={handleInputChange}
+                            autoComplete="off"
                         />
 
 

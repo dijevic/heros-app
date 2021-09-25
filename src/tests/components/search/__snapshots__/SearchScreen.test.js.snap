@@ -1,0 +1,203 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en mi componente de Search screen debe de leer y buscar por parametro 1`] = `
+<div>
+  <h1>
+    Search
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="find tour hero"
+          type="text"
+          value="batman"
+        />
+        <button
+          className="btn btn-primary d-inline-block w-100 mt-3"
+          type="submit"
+        >
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 card-columns row row-cols-1 row-cols-md-3 g-4 "
+    >
+      <h4
+        className="text-center w-100"
+      >
+        results
+      </h4>
+      <div
+        className="my-card"
+        onClick={[Function]}
+      >
+        <img
+          alt="Batman"
+          className="img img-responsive"
+          src="./assets/heroes/dc-batman.jpg"
+        />
+        <div
+          className="profile-name"
+        >
+          Batman
+        </div>
+        <div
+          className="profile-position"
+        >
+          Bruce Wayne
+        </div>
+        <div
+          className="profile-overview"
+        >
+          <div
+            className="profile-overview"
+          >
+            <div
+              className="row"
+            >
+              <div
+                className="col-ms-4"
+              >
+                <h3>
+                  DC Comics
+                </h3>
+                <p>
+                  Primera aparición: 
+                  <br />
+                  Detective Comics #27
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`pruebas en mi componente de Search screen debe hacer match con el snapshot por defecto 1`] = `
+<div>
+  <h1>
+    Search
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="find tour hero"
+          type="text"
+          value=""
+        />
+        <button
+          className="btn btn-primary d-inline-block w-100 mt-3"
+          type="submit"
+        >
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 card-columns row row-cols-1 row-cols-md-3 g-4 "
+    >
+      <h4
+        className="text-center w-100"
+      >
+        results
+      </h4>
+      <div
+        className="alert alert-info w-100"
+      >
+        Busca un heroe
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`pruebas en mi componente de Search screen debe mostrar un error si la ruta de busqueda o existe 1`] = `
+<div>
+  <h1>
+    Search
+  </h1>
+  <hr />
+  <div
+    className="row"
+  >
+    <div
+      className="col-5"
+    >
+      <h4>
+        search Form
+      </h4>
+      <hr />
+      <form
+        onSubmit={[Function]}
+      >
+        <input
+          autoComplete="off"
+          className="form-control"
+          name="searchText"
+          onChange={[Function]}
+          placeholder="find tour hero"
+          type="text"
+          value="1234"
+        />
+        <button
+          className="btn btn-primary d-inline-block w-100 mt-3"
+          type="submit"
+        >
+          Buscar
+        </button>
+      </form>
+    </div>
+    <div
+      className="col-7 card-columns row row-cols-1 row-cols-md-3 g-4 "
+    >
+      <h4
+        className="text-center w-100"
+      >
+        results
+      </h4>
+      <div
+        className="alert alert-info w-100"
+      >
+        no existe un heroe con el nombre 
+        1234
+      </div>
+    </div>
+  </div>
+</div>
+`;

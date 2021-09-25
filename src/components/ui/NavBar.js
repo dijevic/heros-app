@@ -3,6 +3,8 @@ import { Link, NavLink, useHistory } from 'react-router-dom'
 import { authContext } from '../../auth/AuthContext'
 import { types } from '../../tipos/types'
 
+
+
 export const Navbar = () => {
     const { usuario, dispatch } = useContext(authContext)
     const history = useHistory()
@@ -58,9 +60,9 @@ export const Navbar = () => {
 
             <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 ">
                 <ul className="navbar-nav ml-auto d-flex ">
-                    <p className="nav-item nav-link">{usuario.logged && <b>{usuario.nombre}</b>}</p>
+                    <p className="nav-item nav-link name">{usuario.logged && <b>{usuario.nombre}</b>}</p>
                     <button
-                        className="nav-item nav-link btn btn-danger"
+                        className="nav-item nav-link btn"
                         onClick={handleLogOut}
                     >
                         Logout

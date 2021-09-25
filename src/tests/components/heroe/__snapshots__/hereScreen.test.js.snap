@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pruebas en mi componente de hero screen debe de mostrar mi componente redirect 1`] = `""`;
+
+exports[`pruebas en mi componente de hero screen debe de mostrar mi componente redirect si el heroe no existe 1`] = `""`;

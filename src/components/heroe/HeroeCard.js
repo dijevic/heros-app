@@ -26,7 +26,7 @@ export const HeroeCard = ({
 
     return (
         <div /* to={} */ className="my-card" onClick={handleClick}>
-            <img src={heroesImages(`./${id}.jpg`).default} className="img img-responsive" alt={superhero} />
+            <img src={heroesImages(`./${id}.jpg`).default} className="img img-responsive" alt={superhero} loading="lazy" />
             <div className="profile-name">{superhero}</div>
             <div className="profile-position">{alter_ego}</div>
             <div className="profile-overview">

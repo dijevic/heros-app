@@ -38,7 +38,7 @@ export const HeroeScreen = ({ history }) => {
 
             <div className="col-4">
                 {/* <img src={`../assets/heroes/${id}.jpg`} alt={superhero} className="img-thumbnail " /> */}
-                <img src={heroesImages(`./${id}.jpg`).default} alt={superhero} className="img-thumbnail " />
+                <img src={heroesImages(`./${id}.jpg`).default} alt={superhero} loading="lazy" className="img-thumbnail " />
             </div>
 
             <div className="col-8">

@@ -17,7 +17,7 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-dark ">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-20 nav ">
 
             <Link
                 className="navbar-brand"
@@ -58,9 +58,9 @@ export const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 ">
+            <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end ">
                 <ul className="navbar-nav ml-auto d-flex ">
-                    <p className="nav-item nav-link name">{usuario.logged && <b>{usuario.nombre}</b>}</p>
+                    <p className="nav-item nav-link name mt-3">{usuario.logged && <b>{usuario.nombre}</b>}</p>
                     <button
                         className="nav-item nav-link btn"
                         onClick={handleLogOut}

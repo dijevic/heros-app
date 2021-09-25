@@ -1,5 +1,6 @@
 import React from 'react'
 import { /* Link */ useHistory } from 'react-router-dom'
+const heroesImages = require.context('../../assets/heroes', true)
 
 export const HeroeCard = ({
     id,
@@ -25,7 +26,7 @@ export const HeroeCard = ({
 
     return (
         <div /* to={} */ className="my-card" onClick={handleClick}>
-            <img src={`./assets/heroes/${id}.jpg`} className="img img-responsive" alt={superhero} />
+            <img src={heroesImages(`./${id}.jpg`).default} className="img img-responsive" alt={superhero} />
             <div className="profile-name">{superhero}</div>
             <div className="profile-position">{alter_ego}</div>
             <div className="profile-overview">
